@@ -1,0 +1,42 @@
+[
+    {
+        "userOneId": 1,
+        "userTwoId": 2 
+    },
+    {
+        "userOneId": 2,
+        "userTwoId": 7 
+    },
+    {
+        "userOneId": 6,
+        "userTwoId": 3 
+    },
+    {
+        "userOneId": 2,
+        "userTwoId": 8 
+    },
+    {
+        "userOneId": 3,
+        "userTwoId": 4 
+    },
+    {
+        "userOneId": 4,
+        "userTwoId": 1 
+    },
+    {
+        "userOneId": 5,
+        "userTwoId": 2 
+    },
+    {
+        "userOneId": 6,
+        "userTwoId": 7 
+    },
+    {
+        "userOneId": 1,
+        "userTwoId": 2 
+    },
+    {
+        "userOneId": 1,
+        "userTwoId": 2 
+    }
+]

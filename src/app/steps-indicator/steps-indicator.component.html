@@ -1,1 +1,14 @@
-<p>steps-indicator works!</p>
+
+<ng-container *ngIf="breadCrumbs.length; else allUsers">
+    <div class="breadCrumbWrapper" >
+        <div class="breadCrumb" *ngFor="let entity of breadCrumbs; let i =index">
+            <p *ngIf="entity.firstName; else allUsers" (click)="handleBreadcrumbClick($event, entity )">
+                {{ entity.firstName | titlecase }} {{ entity.lastName | titlecase }}
+            </p>
+        </div>
+    </div>
+</ng-container>
+
+<ng-template #allUsers>
+    <p  (click)="getAllUsers($event)"> All Users </p>
+</ng-template>

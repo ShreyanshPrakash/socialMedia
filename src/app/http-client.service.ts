@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -10,22 +10,22 @@ export class HttpClientService {
 
 
 
-  getAllUsers( url ){
+  getAllUsers( url, params?: HttpParams ){
     url = 'http://localhost:4400' + url;
-    return this.http.get( url );
+    return this.http.get( url, { params: params } );
 
   }
 
-  getUserFriends( url ){
-
-    return this.http.get( url );
-
-  }
-
-  getUserFriendsOfFriends( url ){
-
-    return this.http.get( url );
+  getUserFriends( url, params?: HttpParams ){
+    url = 'http://localhost:4400' + url;
+    return this.http.get( url, { params: params } );
 
   }
+
+  // getUserFriendsOfFriends( url ){
+
+  //   return this.http.get( url );
+
+  // }
 
 }

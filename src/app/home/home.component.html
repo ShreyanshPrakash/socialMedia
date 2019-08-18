@@ -1,0 +1,13 @@
+<ng-container *ngTemplateOutlet=" error?.hasError ? errorTemplate : successTemplate">
+</ng-container>
+<ng-template #successTemplate>
+    <div class="homeWrapper">
+        <app-steps-indicator [userSelection]="userSelection"></app-steps-indicator>
+        <app-list (rowSelection)="handleRowClick( $event )" (error)="handleError( $event )"></app-list>
+    </div>
+</ng-template>
+<ng-template #errorTemplate>
+    <div class="error">
+        <h1>{{ error.errorMessage }}</h1>
+    </div>
+</ng-template>

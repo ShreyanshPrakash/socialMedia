@@ -1,0 +1,32 @@
+.breadCrumbWrapper{
+
+    display: flex;
+    // flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    overflow-x: auto;
+    
+    &:hover{
+        cursor: pointer;
+    }
+
+    a{
+        text-decoration: none;
+        color: #594F4F ;
+    }
+
+    .breadCrumb{
+        // flex-basis: 150px;
+        // max-width: 150px;
+        background-color: #614ad3  ;
+        padding: 10px 15px;
+        margin: 10px;
+        border-radius: 50px;
+        
+        p{
+            text-align: center;
+            color: white;
+        }
+
+    }
+}
