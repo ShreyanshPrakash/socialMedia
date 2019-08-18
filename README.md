@@ -7,7 +7,12 @@ How to use :
     npm run demo 
         - builds angular app for prod
         - runs express app to serve both static assets and apis
-        
+        - for the first run, express app creates and inserts data to mysql db
+    
+    /backend/config.json : edit for db interaction
+    
+    Pagination logic is in list.component.ts.Modify recordsPerPage in constructor.
+
 
 Api endpoints : All GET methods
 
