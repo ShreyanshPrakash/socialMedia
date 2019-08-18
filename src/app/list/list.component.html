@@ -1,0 +1,33 @@
+<ng-container *ngIf="users.length; else noRecords">
+
+    <div class="listWrapper">
+        <div class="users">
+            <ul>
+                <li *ngFor="let user of users" class="userWrapper">
+                    <a href="javascript:void(0)" (click)="handleUserClick( user, $event)">
+                        <div class="userPic">
+                            <img src="{{user.avatar}}">
+                        </div>
+                        <p>{{ user.firstName | titlecase }} {{ user.lastName | titlecase }}</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="pagination">
+            <ul>
+                <li *ngFor="let page of pages; let i = index" class="pageIndex">
+                    <a href="javascript:void(0)" (click)="handlePageination($event, i+1)">
+                        <b>{{ i + 1 }}</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</ng-container>
+
+<ng-template #noRecords>
+    <div class="listWrapperNorecords">
+        <p>No records found for this user </p>
+    </div>
+</ng-template>

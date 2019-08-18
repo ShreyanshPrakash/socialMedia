@@ -1,0 +1,99 @@
+.listWrapperNorecords{
+    margin: 30px auto;
+
+    p{
+        padding: 20px;
+        color: white;
+    }
+}
+
+.listWrapper{
+    // background-color: blue;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+
+    a{
+        text-decoration: none;
+        color : black;
+    }
+
+    li{
+        text-decoration: none;
+        list-style: none;
+        // display: inline-block;
+    }
+
+    p{
+        color: white;
+    }
+
+    .users{
+
+        // display: flex;
+        // justify-content: space-around;
+        // flex-wrap: wrap;
+        width: 100%;
+        margin: 20px auto;
+
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .userWrapper{
+            // background-color: white;
+            padding: 10px 0px;
+            margin: 10px;
+            border-radius: 5px;
+
+            .userPic{
+                height: auto;
+                min-width: 100px;
+                width: 200px;
+                margin: 10px;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    .pagination{
+
+        // background-color: orange;
+        display: flex;
+        margin: auto;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            vertical-align: center;
+        }
+
+        .pageIndex{
+            margin: 10px 20px;
+            background-color: #614ad3;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+
+            a{
+               color: white;
+            }
+        }
+    }
+}

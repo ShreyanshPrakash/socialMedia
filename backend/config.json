@@ -1,0 +1,11 @@
+{
+    "dbConfig":{
+        "insecureAuth": true,
+        "host": "localhost",
+        "user": "root",
+        "password": "password",
+        "database": "testing",
+        "port": "3306",
+        "multipleStatements": true
+    }
+}
