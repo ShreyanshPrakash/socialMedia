@@ -6,7 +6,7 @@
                 <li *ngFor="let user of users" class="userWrapper">
                     <a href="javascript:void(0)" (click)="handleUserClick( user, $event)">
                         <div class="userPic">
-                            <img src="assets/blank-profile-picture-973460_640.png">
+                            <img src="{{user.avatar}}">
                         </div>
                         <p>{{ user.firstName | titlecase }} {{ user.lastName | titlecase }}</p>
                     </a>

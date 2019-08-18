@@ -93,13 +93,13 @@ app.get('*', (req, res) => {
 
 
 app.listen(4400, () => {
-    console.log('listening at port 4400');
     console.log(" initiating initial db processing --------------------- ");
     createDatabase();
     createTable();
     insertUsers();
     insertFriendship();
     console.log(" initial db processing completed --------------------- ");
+    console.log('listening at port 4400');
 })
 
 

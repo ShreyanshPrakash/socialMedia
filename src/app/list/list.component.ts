@@ -25,7 +25,7 @@ export class ListComponent implements OnInit {
     this.error = new EventEmitter<any>();
     this.rowSelection = new EventEmitter<any>();
     this.errorModel = new ErrorModel();
-    this.recordsPerPage = 10;
+    this.recordsPerPage = 4;
     this.pages = [];
     this.users = [];
   }
