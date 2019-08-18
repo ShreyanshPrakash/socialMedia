@@ -2,6 +2,13 @@
 Browse through the users, their friends and friends of friends
 
 
+How to use :
+
+    npm run demo 
+        - builds angular app for prod
+        - runs express app to serve both static assets and apis
+        
+
 Api endpoints : All GET methods
 
     1. getAllUsers : '/restservice/users/getallusers'
